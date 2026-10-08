@@ -1,6 +1,6 @@
 name: Install Docker.   
 on: 
-  workflow_dispatch:
+  workflow_call:
     inputs: 
       os:
         description: "Operating system of machine you install docker on"
