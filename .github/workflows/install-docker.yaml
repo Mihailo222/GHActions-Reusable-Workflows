@@ -19,7 +19,7 @@ on:
 
 jobs: 
   install-docker: 
-    runs-on: ['dp-runner' , 'dp-ci']   
+    runs-on: ['dp-runner', 'dp-ci', 'self-hosted']   
 
     steps: 
       - name: Update apt cache and install prerequisites
