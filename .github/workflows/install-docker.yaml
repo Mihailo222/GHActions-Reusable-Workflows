@@ -4,21 +4,13 @@ on:
     inputs: 
       os:
         description: "Operating system of machine you install docker on"
-        type: choice
-        options:
-          - linux
-          - windows 
+        type: string
+        default: linux
         required: true 
       distribution:
         description: "Linux distribution or Windows version"
-        type: choice
-        options:
-          - ubuntu
-          - debian
-          - centos
-          - fedora
-          - windows-10
-          - windows-11  
+        type: string 
+        default: ubuntu 
         required: true 
     secrets:
       CHECKOUT_GHE_PAT: 
