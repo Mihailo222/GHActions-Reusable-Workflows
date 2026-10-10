@@ -42,6 +42,8 @@ jobs:
           Architectures: $(dpkg --print-architecture)
           Signed-By: /etc/apt/keyrings/docker.asc
           EOF
+
+          sudo apt update
      
       - name: Update apt cache and install docker packages. 
         if: ${{ inputs.os == 'linux' && inputs.distribution == 'ubuntu' }}
